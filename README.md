@@ -54,3 +54,8 @@ localhost:8080/
 9) **Stop the spark session** doing:
 cd $SPARK_HOME
 ./sbin/stop-all.sh
+
+
+10) If we are running process, usually the memory of the slaves will be full of the iterations we made so its necessary to clean inside the slaves with this command:
+rm -rf /home/ubuntu/spark-4.1.1-bin-hadoop3/work/*
+
